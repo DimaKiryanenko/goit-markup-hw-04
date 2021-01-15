@@ -219,24 +219,17 @@ ul {
   display: inline-block;
 }
 
-.icon-conv::before {
-  background-image: url("../image/conv.svg");
-  display: block;
-  content: "";
+.icon-conv {
   width: 16px;
   height: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: currentColor;
+  margin-right: 10px;
 }
-
-.icon-mob::before {
-  background-image: url("../image/mob.svg");
-  display: block;
-  content: "";
+.icon-mob {
   width: 10px;
   height: 16px;
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .overlay {
@@ -253,41 +246,13 @@ ul {
 }
 
 /*Команда сайта*/
+.svgimg4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
 
-.icon-radar::before {
-  background-image: url("../image/Radar.svg");
-  display: block;
-  content: "";
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-}
-.icon-clock::before {
-  background-image: url("../image/clock.svg");
-  display: block;
-  content: "";
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-}
-.icon-laptop::before {
-  background-image: url("../image/laptop.svg");
-  display: block;
-  content: "";
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-}
-.icon-astronaut::before {
-  background-image: url("../image/astronaut.svg");
-  display: block;
-  content: "";
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #f5f4fa;
 }
 
@@ -339,11 +304,12 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: #afb1b8;
+  fill: #afb1b8;
   background-color: var(--primari-white-color);
 }
 
 .iconsocial:hover {
+  fill: var(--primari-white-color);
   background-color: var(--primari-click-color);
 }
 
@@ -351,12 +317,6 @@ ul {
   margin: 11px;
   width: 20px;
   height: 20px;
-
-  fill: currentColor;
-}
-
-.social:hover {
-  fill: var(--primari-white-color);
 }
 
 .main-parts + .main-parts {
@@ -428,9 +388,7 @@ ul {
 }
 
 .portfolio-bar {
-  display: inline;
-  width: 170px;
-  height: 90px;
+  display: block;
   text-decoration: none;
 }
 
