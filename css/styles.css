@@ -328,6 +328,10 @@ ul {
   height: 20px;
 }
 
+.features {
+  width: 270px;
+}
+
 .main-parts + .main-parts {
   margin-left: 30px;
 }
@@ -407,11 +411,7 @@ ul {
   text-decoration: none;
 }
 
-.portfolio-bar:focus {
-  border: 1px solid var(--border-color);
-  box-sizing: border-box;
-}
-
+.portfolio-bar:focus,
 .portfolio-bar:hover {
   background: var(--primari-white-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -597,24 +597,28 @@ button {
   background: var(--primari-white-color);
 }
 
-.buttons-bar .item-button {
+.item-button {
+  text-decoration: none;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  outline: none;
+
   background: var(--batton-bg-color);
   color: var(--primari-text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.buttons-bar .item-button:focus {
-  border-radius: 4px;
-  border: 1px solid var(--primari-click-color);
-  box-sizing: border-box;
-}
-
-.buttons-bar .item-button:hover {
+.buttons:focus,
+.item-button:hover {
+  color: var(--batton-bg-color);
   background: var(--primari-click-color);
-  color: var(--primari-white-color);
+
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -630,21 +634,7 @@ button {
   margin-left: 8px;
 }
 
-.item-button {
-  background: #f5f4fa;
-  border: solid 1px transparent;
-  border-radius: 4px;
-
-  outline: none;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .buttons {
+  display: block;
   padding: 0.5em 1em;
 }
