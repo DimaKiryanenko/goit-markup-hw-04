@@ -317,7 +317,7 @@ ul {
   fill: var(--icon-color);
   background-color: var(--primari-white-color);
 }
-
+.iconsocial:focus,
 .iconsocial:hover {
   fill: var(--primari-white-color);
   background-color: var(--primari-click-color);
